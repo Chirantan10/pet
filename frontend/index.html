@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Behavior Analyser</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Light Blue Gradient */
+            color: #333;
+            padding: 20px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(8px);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        button {
+            background: #4CAF50; /* Green */
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            outline: none;
+            display: block;
+            width: 100%;
+            margin-top: 15px;
+            box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+        }
+
+        button:hover {
+            background: #388E3C;
+            box-shadow: 0 6px 20px rgba(56, 142, 60, 0.4);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        #status {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            button {
+                font-size: 16px;
+                padding: 12px 20px;
+            }
+
+            #status {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🐶 Pet Behavior Analyser 🐱</h1>
+    <div class="container">
+        <button id="recordButton">🎤 Record</button>
+        <p id="status">Press "Record" to analyze your pet's sound.</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
