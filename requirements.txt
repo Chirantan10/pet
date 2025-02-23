@@ -1,0 +1,11 @@
+Flask
+flask-cors
+torch
+torchaudio
+pydub
+gtts
+gunicorn
+numpy
+pandas
+requests
+openpyxl
